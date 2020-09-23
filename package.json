@@ -1,0 +1,37 @@
+{
+  "name": "setup-api",
+  "version": "1.0.0",
+  "description": "API REST FULL",
+  "main": "index.js",
+  "scripts": {
+    "project": "docker-compose up --build --remove-orphans",
+    "project:debug": "docker-compose -f docker-compose-debug.yml up --build --remove-orphans",
+    "api": "node src/microservices/api/api.js",
+    "api:debug": "./node_modules/.bin/nodemon -L src/microservices/api/api.js"
+  },
+  "author": "Etienne Juzans",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "celebrate": "^13.0.3",
+    "compression": "^1.7.4",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "express": "^4.17.1",
+    "figlet": "^1.5.0",
+    "fs-readdir-recursive": "^1.1.0",
+    "helmet": "^4.1.1",
+    "http": "^0.0.1-security",
+    "mongoose": "^5.10.6",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "path": "^0.12.7",
+    "prettier": "^2.1.2",
+    "require-dir": "^1.2.0",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.0",
+    "yarn": "^1.22.5"
+  }
+}
